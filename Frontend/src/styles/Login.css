@@ -1,0 +1,53 @@
+.login-container {
+    height: 100vh; /* Chiếm toàn bộ chiều cao màn hình */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #020024, #cc0a9d); /* Nền gradient */
+    padding: 1rem;
+  }
+  
+  .login-title {
+    margin-bottom: 1.5rem;
+    color: #fff; 
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .login-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-footer {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .login-footer a {
+    font-size: 14px;
+    color: #1890ff;
+  }
+  
+  .login-footer .ant-typography-text {
+    font-size: 14px;
+  }
+  
+  .logo-container {
+    padding: 20px 0;
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .logo-container img {
+    transition: transform 0.2s;
+  }
+  
+  .logo-container img:hover {
+    transform: scale(1.05);
+  }
+  

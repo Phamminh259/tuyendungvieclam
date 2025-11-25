@@ -1,0 +1,35 @@
+.cta {
+  padding: 40px;
+  background: linear-gradient(135deg, #1890ff 0%, #722ed1 100%);
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.cta button {
+  font-size: 18px;
+  height: 48px;
+  padding: 0 32px;
+}
+
+.feature-card {
+  padding: 24px;
+  margin-bottom: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+}
+
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+} 

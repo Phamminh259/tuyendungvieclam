@@ -1,0 +1,101 @@
+/* Header Container */
+.header {
+    background-color: #cc0a9d !important; /* Màu chủ đạo */
+    padding: 0 20px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    height: 66.8px !important; /* Chiều cao cố định */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+    position: sticky !important; /* Đặt vị trí sticky */
+    top: 0 !important; /* Dính ở trên cùng */
+    z-index: 1000 !important; /* Đảm bảo header nằm trên các phần tử khác */
+  }
+  
+  /* Logo */
+  .header-logo img {
+    height: 50px;
+  }
+  
+  /* Navigation Menu */
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    background: transparent;
+    border-bottom: none;
+  }
+  
+  .menu-item {
+    font-size: 16px;
+    color: #fff; /* Đảm bảo màu trắng */
+    transition: color 0.3s ease;
+  }
+  
+  .menu-link {
+    color: #fff; /* Đảm bảo màu trắng */
+    text-decoration: none; /* Loại bỏ gạch chân */
+  }
+  
+  .menu-link:hover {
+    color: #ffd1e8; /* Màu hồng nhạt khi hover */
+    text-decoration: none; /* Đảm bảo không xuất hiện gạch chân */
+  }
+  
+  /* Nút "Trò chuyện", "Nhà tuyển dụng" */
+  .btn-link {
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin-right: 15px; /* Khoảng cách giữa các nút */
+    transition: color 0.3s ease;
+    text-decoration: none; /* Loại bỏ gạch chân */
+  }
+  
+  .btn-link:hover {
+    color: #ffd1e8; /* Hover đổi màu hồng nhạt */
+    text-decoration: none; /* Đảm bảo không xuất hiện gạch chân */
+  }
+  
+  .employer-link {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 15px; /* Khoảng cách với nút "Đăng ký / Đăng nhập" */
+  }
+  
+  .employer-link:hover {
+    border-color: #ffd1e8;
+  }
+  
+  /* Avatar */
+  .avatar {
+    font-size: 14px;
+    background-color: #fff;
+    color: #cc0a9d;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  /* Nút "Đăng ký / Đăng nhập" */
+  .register-button {
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: transparent;
+    transition: all 0.3s ease;
+    text-decoration: none; /* Loại bỏ gạch chân */
+  }
+  
+  .register-button:hover {
+    color: #ffd1e8;
+    border-color: #ffd1e8;
+    text-decoration: none; /* Đảm bảo không xuất hiện gạch chân */
+  }
+  

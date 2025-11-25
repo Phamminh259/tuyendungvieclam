@@ -1,0 +1,39 @@
+.login-container {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, rgb(2, 0, 36), rgb(204, 10, 157));
+}
+
+.login-card {
+  animation: card-entry 0.8s ease-in-out;
+  max-width: 400px;
+  width: 100%;
+  background-color: #fff; /* Nền trắng cho thẻ login để nổi bật */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes card-entry {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.btn {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.05); 
+  background-color: rgb(204, 10, 157); 
+  color: #fff;
+}

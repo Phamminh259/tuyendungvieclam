@@ -1,0 +1,41 @@
+
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .input-group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .input-group button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .filter-group {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .filter-group button {
+    padding: 8px 12px;
+    background-color: #f1f3f5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

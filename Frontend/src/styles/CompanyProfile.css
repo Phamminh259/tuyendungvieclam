@@ -1,0 +1,51 @@
+.company-profile {
+  padding: 24px;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.ant-descriptions-item-label {
+  width: 150px;
+}
+
+.ant-tabs-content {
+  padding: 24px 0;
+}
+
+.ant-statistic {
+  background: #f5f5f5;
+  padding: 24px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.ant-upload {
+  width: 100%;
+}
+
+.company-logo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.company-description {
+  white-space: pre-line;
+  line-height: 1.6;
+  margin: 16px 0;
+  padding: 16px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.company-description-empty {
+  color: #999;
+  font-style: italic;
+} 

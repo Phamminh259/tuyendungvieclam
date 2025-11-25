@@ -1,0 +1,270 @@
+/* Container chính */
+.register-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #020024 0%, #cc0a9d 100%);
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.register-content {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  bottom: 6.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.logo-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, #020024, #cc0a9d);
+}
+
+.logo-container img {
+  height: 60px;
+  transition: all 0.3s ease;
+}
+
+.logo-container img:hover {
+  transform: scale(1.08);
+  filter: brightness(1.1);
+}
+
+/* Wrapper chứa các form */
+.form-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  min-height: 400px; /* Cố định chiều cao để form luôn ở giữa */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slideUp 0.5s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Form nội dung */
+.form-content {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+  transform: scale(0.95) translateY(-50%);
+}
+
+/* Kích hoạt hiển thị form */
+.form-content.active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1) translateY(0);
+}
+
+/* Hiệu ứng chuyển từ form Đăng ký sang form Xác thực */
+.form-wrapper.transition-verify .form-content:nth-child(1) {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.form-wrapper.transition-verify .form-content:nth-child(2) {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+/* Hiu ứng chuyển từ form Xác thực quay lại form Đăng ký */
+.form-wrapper.transition-register .form-content:nth-child(1) {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.form-wrapper.transition-register .form-content:nth-child(2) {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+/* Giao diện cơ bản ca form */
+.form-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Các tiêu đề trong form */
+.form-content h2,
+.form-content h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Điều chỉnh khoảng cách các mục trong form */
+.form-content .ant-form-item {
+  margin-bottom: 1rem;
+}
+
+/* Input kích thước bình thường */
+.form-content .ant-input,
+.form-content .ant-input-password {
+  padding: 4px 11px; /* Sử dụng padding mặc định */
+  font-size: 14px;   /* Kích thước chữ mặc định */
+  height: auto;      /* Chiều cao tự động */
+}
+
+/* Button trong form */
+.form-content .ant-btn {
+  font-size: 14px; /* Kích thước nút mặc định */
+  padding: 4px 15px;
+}
+
+/* Button chính (Đăng ký, Xác thực) */
+.form-content .ant-btn-primary {
+  background-color: #4a90e2;
+  border-color: #4a90e2;
+  width: 100%;
+}
+
+.form-content .ant-btn-primary:hover {
+  background-color: #357abd;
+  border-color: #357abd;
+}
+
+/* Button phụ (Trở lại) */
+.form-content .ant-btn-default {
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+/* Checkbox */
+.form-content .ant-checkbox-wrapper {
+  margin-top: 1rem;
+}
+
+/* Typography */
+.form-content .ant-typography {
+  text-align: center;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Style cho link điều khoản */
+.ant-checkbox-wrapper a {
+  color: #1890ff;
+  text-decoration: none;
+}
+
+.ant-checkbox-wrapper a:hover {
+  text-decoration: underline;
+}
+
+/* Style cho modal điều khoản */
+.terms-modal .terms-title {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.terms-modal .terms-title h3 {
+  display: inline-block;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.terms-modal .ant-modal-header {
+  border-bottom: none;
+}
+
+.terms-modal .ant-modal-content {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.terms-modal .ant-modal-body {
+  padding: 24px;
+}
+
+.terms-modal .ant-typography {
+  color: #333;
+}
+
+.terms-modal ul {
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+.terms-modal li {
+  margin-bottom: 4px;
+}
+
+/* Style cho link điều khoản */
+.terms-link {
+  transition: all 0.3s ease;
+}
+
+.terms-link:hover {
+  color: #40a9ff !important;
+  text-shadow: 0 0 1px rgba(24, 144, 255, 0.2);
+}
+
+.terms-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #1890ff;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.terms-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Animation nhấp nháy cho dấu sao */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.terms-link span {
+  animation: blink 2s infinite;
+}

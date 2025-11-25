@@ -1,0 +1,78 @@
+.payment-result-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+    padding: 20px;
+  }
+  
+  .payment-card {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .loading-card {
+    max-width: 400px;
+  }
+  
+  .company-logo {
+    height: 60px;
+    margin-bottom: 24px;
+  }
+  
+  .vnpay-logo {
+    height: 30px;
+    margin-left: 8px;
+  }
+  
+  .status-icon {
+    font-size: 72px;
+  }
+  
+  .status-icon.success {
+    color: #52c41a;
+  }
+  
+  .status-icon.error {
+    color: #ff4d4f;
+  }
+  
+  .payment-details {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+  }
+  
+  .payment-footer {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .payment-card {
+    animation: fadeIn 0.5s ease-out;
+  }

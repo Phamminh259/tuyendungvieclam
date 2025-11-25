@@ -1,0 +1,142 @@
+.profile-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile-basic-info {
+  margin-bottom: 20px;
+}
+
+.profile-completion {
+  margin-bottom: 20px;
+}
+
+.profile-header {
+  margin-top: 20px;
+}
+
+.location-salary {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.profile-details {
+  min-height: 400px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.skill-tag {
+  background-color: #f5f5f5;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 14px;
+}
+
+/* Tùy chỉnh style cho các button thêm mới */
+.ant-btn-text {
+  padding-left: 0;
+  color: #1890ff;
+}
+
+.ant-btn-text:hover {
+  background: none;
+  color: #40a9ff;
+}
+
+/* Style cho tabs */
+.ant-tabs-nav {
+  margin-bottom: 24px;
+}
+
+.ant-tabs-tab {
+  padding: 12px 0;
+}
+
+.ant-tabs-tab + .ant-tabs-tab {
+  margin-left: 32px;
+}
+
+.completion-card {
+  background: #fff;
+}
+
+.experience-item {
+  padding: 16px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+}
+
+.ant-card-extra .ant-btn-link {
+  padding: 0;
+}
+
+.ant-tag {
+  padding: 4px 8px;
+  margin: 4px;
+}
+
+.avatar-uploader {
+  width: 128px;
+  height: 128px;
+  margin: 0 auto;
+}
+
+.avatar-uploader .ant-upload {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px dashed #d9d9d9;
+  transition: border-color 0.3s;
+}
+
+.avatar-uploader .ant-upload:hover {
+  border-color: #1890ff;
+}
+
+.avatar-uploader img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.ant-upload-drag {
+  background: #fafafa;
+  border: 2px dashed #d9d9d9;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+  transition: border-color 0.3s;
+}
+
+.ant-upload-drag:hover {
+  border-color: #1890ff;
+}
+
+.ant-upload-drag-icon {
+  font-size: 48px;
+  color: #40a9ff;
+  margin-bottom: 16px;
+}
+
+.ant-upload-text {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.85);
+  margin-bottom: 8px;
+}
+
+.ant-upload-hint {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.45);
+} 

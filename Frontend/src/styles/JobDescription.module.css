@@ -1,0 +1,16 @@
+
+.custom-menu .ant-menu-item::after {
+  content: none !important; 
+}
+
+
+.custom-menu .ant-menu-item:hover {
+  color: rgb(204, 10, 157) !important;
+  border-bottom: 2px solid rgb(204, 10, 157) !important;
+}
+
+
+.custom-menu .ant-menu-item-selected {
+  color: rgb(204, 10, 157) !important;
+  border-bottom: 2px solid rgb(204, 10, 157) !important;
+}

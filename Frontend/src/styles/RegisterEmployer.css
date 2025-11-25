@@ -1,0 +1,147 @@
+.register-page {
+  transition: all 0.5s ease;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.feature-card {
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Animation cho gradient background */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient {
+  background: linear-gradient(45deg, #020024, #cc0a9d, #020024);
+  background-size: 200% 200%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+.home-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.home-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.home-button:hover::before {
+  transform: translateX(0);
+}
+
+.home-button:hover {
+  border-color: #fff !important;
+  color: #fff !important;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Style cho link điều khoản */
+.terms-link {
+  transition: all 0.3s ease;
+}
+
+.terms-link:hover {
+  color: #40a9ff !important;
+  text-shadow: 0 0 1px rgba(24, 144, 255, 0.2);
+}
+
+.terms-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #1890ff;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.terms-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Animation nhấp nháy cho dấu sao */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.terms-link span {
+  animation: blink 2s infinite;
+}
+
+/* Style cho modal điều khoản */
+.terms-modal .terms-title {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.terms-modal .terms-title h3 {
+  display: inline-block;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.terms-modal .ant-modal-header {
+  border-bottom: none;
+}
+
+.terms-modal .ant-modal-content {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.terms-modal .ant-modal-body {
+  padding: 24px;
+}
+
+.terms-modal .ant-typography {
+  color: #333;
+}
+
+.terms-modal ul {
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+.terms-modal li {
+  margin-bottom: 4px;
+}
+  
